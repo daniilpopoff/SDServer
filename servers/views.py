@@ -15,6 +15,6 @@ class IndexTemplateView(TemplateView):
         context['adventage'] = Adventage.objects.all()  # or whatever
         context['carusel'] = Carusel.objects.all()  # or whatever
         context['discount'] = Discount.objects.all().first()
-        context['one_discount'] = Discount.objects.all().first().one_discount_set().all()
+        context['one_discount'] = Discount.objects.all().first().one_discount_set.all()
         context['sthWith4'] = sthWith4.objects.all()
         return context

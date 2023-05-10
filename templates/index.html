@@ -174,7 +174,6 @@
                 {% for i in adventage %}
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="feature__item">
-                        <span class="fa fa-cloud-upload"></span>
                         <img src='{{i.image_icon.url}}'>
                         <h5>{{i.title}}</h5>
                         <p>{{i.text}}</p>
@@ -368,22 +367,20 @@
     <section class="choose-plan-section spad">
         <div class="container">
             <div class="row">
-                {% for i in discount%}
                 <div class="col-lg-6 col-md-6">
-                    <img src="{{i.image_icon.url}}" alt="">
+                    <img src="{{discount.image_icon.url}}" alt="">
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="plan__text">
-                        <h3>{{i.title}}</h3>
+                        <h3>{{discount.title}}</h3>
                         <ul>
                             {% for j in one_discount%}
                             <li><span class="fa fa-check"></span> {{j.text}}</li>
-                            {%endfor%%}
+                            {%endfor%}
                         </ul>
                         <a href="#" class="primary-btn">Get start now</a>
                     </div>
                 </div>
-                {% endfor %}
             </div>
         </div>
     </section>
