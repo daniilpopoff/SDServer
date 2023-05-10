@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -14,13 +16,13 @@
         rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
 </head>
 
 <body>
@@ -36,7 +38,7 @@
             <span class="fa fa-times-circle-o"></span>
         </div>
         <div class="offcanvas__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
         </div>
         <nav class="offcanvas__menu mobile-menu">
             <ul>
@@ -98,7 +100,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-9">
@@ -130,7 +132,7 @@
     <!-- Hero Section Begin -->
     <section class="hero-section">
         <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+            <div class="hero__item set-bg" data-setbg="{% static 'img/hero/hero-1.jpg' %}">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -142,13 +144,13 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="hero__img">
-                                <img src="img/hero/hero-right.png" alt="">
+                                <img src="{% static 'img/hero/hero-right.png' %}" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+            <div class="hero__item set-bg" data-setbg="{% static 'img/hero/hero-1.jpg' %}">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -160,7 +162,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="hero__img">
-                                <img src="img/hero/hero-right.png" alt="">
+                                <img src="{% static 'img/hero/hero-right.png' %}" alt="">
                             </div>
                         </div>
                     </div>
@@ -426,7 +428,7 @@
     <!-- Pricing Section End -->
 
     <!-- Achievement Section Begin -->
-    <section class="achievement-section set-bg spad" data-setbg="img/achievement-bg.jpg">
+    <section class="achievement-section set-bg spad" data-setbg="{% static 'img/achievement-bg.jpg' %}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6">
@@ -507,7 +509,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <img src="img/choose-plan.png" alt="">
+                    <img src="{% static 'img/choose-plan' %}.png" alt="">
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="plan__text">
@@ -549,13 +551,13 @@
                 </div>
             </div>
         </div>
-        <div class="footer__text set-bg" data-setbg="img/footer-bg.png">
+        <div class="footer__text set-bg" data-setbg="{% static 'img/footer-bg.png' %}">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="footer__text-about">
                             <div class="footer__logo">
-                                <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                                <a href="./index.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida viverra maecen
@@ -615,11 +617,11 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 
 </html>
